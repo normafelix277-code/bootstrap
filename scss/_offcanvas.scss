@@ -6,8 +6,6 @@
 @use "mixins/backdrop" as *;
 @use "layout/breakpoints" as *;
 
-// stylelint-disable function-disallowed-list
-
 %offcanvas-css-vars {
   // scss-docs-start offcanvas-css-vars
   --#{$prefix}offcanvas-zindex: #{$zindex-offcanvas};
