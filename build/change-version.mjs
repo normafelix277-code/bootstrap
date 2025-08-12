@@ -1,22 +1,7 @@
-#!/usr/bin/env node
+
 
 /*!
- * Script to update version number references in the project.
- * Copyright 2017-2025 The Bootstrap Authors
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */
-
-import { execFile } from 'node:child_process'
-import fs from 'node:fs/promises'
-import process from 'node:process'
-
-const VERBOSE = process.argv.includes('--verbose')
-const DRY_RUN = process.argv.includes('--dry') || process.argv.includes('--dry-run')
-
-// These are the files we only care about replacing the version
-const FILES = [
-  'README.md',
-  'config.yml',
+ * Script to update version number references in the
   'js/src/base-component.js',
   'package.js',
   'scss/mixins/_banner.scss',
